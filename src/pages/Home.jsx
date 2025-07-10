@@ -13,13 +13,14 @@ const Home = () => {
         {/* 🧠 HEADER */}
         <section className="flex flex-col md:flex-row justify-between items-center gap-10 mb-20">
           <div className="text-center md:text-left flex-1">
-            <h1 className="text-5xl font-extrabold mb-2">Retno's Portfolio</h1>
+            <h1 className="text-5xl font-extrabold mb-2">Retno's Profil</h1>
             <h2 className="text-xl text-white/70 mb-6">
-              Typography | Photography
+              Fresh Graduate | Front-End Developer
             </h2>
             <p className="leading-relaxed max-w-xl text-white/80 mb-6 mx-auto md:mx-0">
-              Kenalin, namaku Retno, lulusan S1 Teknik Komputer Universitas Dian
-              Nuswantoro.
+              Hai! Aku Retno, fresh graduate dari S1 Teknik Informatika
+              Universitas Dian Nuswantoro. Sekarang aku fokus ngembangin skill
+              sebagai front-end developer di bidang web development.
             </p>
             <button className="px-6 py-2 rounded-full bg-white/10 border border-white font-medium hover:bg-white/20 transition">
               Read more →
@@ -85,21 +86,21 @@ const Home = () => {
               {/* Social Media */}
               <div className="flex gap-6 text-2xl text-white">
                 <a
-                  href="https://github.com/wafi-dev"
+                  href="https://github.com/rerettno"
                   target="_blank"
                   className="hover:scale-125 transition"
                 >
                   <FaGithub />
                 </a>
                 <a
-                  href="https://linkedin.com/in/wafi"
+                  href="https://www.linkedin.com/in/hapsari-retno-8a7948257/"
                   target="_blank"
                   className="hover:scale-125 transition"
                 >
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://instagram.com/wfi_faa"
+                  href="https://www.instagram.com/_eno_113/"
                   target="_blank"
                   className="hover:scale-125 transition"
                 >
@@ -130,7 +131,7 @@ const Home = () => {
               {/* Skill */}
               <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow">
                 <h3 className="text-xl font-semibold text-white mb-6">
-                  ⚙️ Keahlian
+                  ⚙️ Experience
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <SkillBar
