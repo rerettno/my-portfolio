@@ -1,40 +1,21 @@
-const SkillBar = ({ title, value, color = "text-white" }) => {
-  const radius = 40;
-  const stroke = 6;
-  const normalizedRadius = radius - stroke * 0.5;
-  const circumference = 2 * Math.PI * normalizedRadius;
-  const strokeDashoffset = circumference - (value / 100) * circumference;
-
+// components/SkillBar.jsx
+const SkillBar = ({ title, value }) => {
   return (
-    <div className="flex flex-col items-center gap-3">
-      <svg height={radius * 2} width={radius * 2} className="rotate-[-90deg]">
-        {/* Background Circle */}
-        <circle
-          stroke="#e5e7eb"
-          fill="transparent"
-          strokeWidth={stroke}
-          r={normalizedRadius}
-          cx={radius}
-          cy={radius}
-        />
-        {/* Progress Circle */}
-        <circle
-          stroke="currentColor"
-          fill="transparent"
-          strokeWidth={stroke}
-          strokeLinecap="round"
-          strokeDasharray={circumference}
-          strokeDashoffset={strokeDashoffset}
-          r={normalizedRadius}
-          cx={radius}
-          cy={radius}
-          className={`${color} transition-all duration-700`}
-        />
-      </svg>
-
-      {/* Center Text */}
-      <div className="-mt-[80px] text-white font-bold text-lg">{value}%</div>
-      <p className="text-sm text-white/90 text-center">{title}</p>
+    <div>
+      <div className="flex justify-between items-center mb-1">
+        <span className="font-medium text-sm text-white">{title}</span>
+        <span className="text-sm text-white/70">{value}%</span>
+      </div>
+      <div className="relative w-full h-3 bg-white/20 rounded-full">
+        <div
+          className="h-3 bg-teal-400 rounded-full relative transition-all duration-500"
+          style={{ width: `${value}%` }}
+        >
+          <div className="absolute -top-[6px] -right-2 w-6 h-6 rounded-full bg-teal-400 border-2 border-white text-[10px] font-bold flex items-center justify-center">
+            {value}%
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

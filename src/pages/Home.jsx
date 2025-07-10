@@ -4,6 +4,9 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import SkillBar from "../components/SkillBar";
 import Footer from "../components/Footer";
 
+import Slider from "react-slick";
+import mockImage from "../assets/mockup.jpg"; // Ganti dengan gambarmu sendiri
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary via-soft to-blush text-white">
@@ -38,142 +41,144 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* 🧍 TENTANG SAYA (REMAKE STYLE) */}
+        <section className="mb-20 text-white px-6 md:px-12 max-w-6xl mx-auto text-center">
+          {/* Header */}
+          <div className="mb-10">
+            <div className="text-3xl mb-2">ℹ️</div>
+            <h2 className="text-4xl font-bold mb-4">Who Am I</h2>
+            <p className="text-white/80 max-w-2xl mx-auto">
+              Hai! Aku Retno, fresh graduate dari S1 Teknik Informatika
+              Universitas Dian Nuswantoro. Sekarang aku fokus ngembangin skill
+              sebagai front-end developer di bidang web development.
+            </p>
+          </div>
 
-        {/* 🧍 TENTANG SAYA */}
-        <section className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Kiri */}
-            <div className="space-y-10">
-              <h2 className="text-4xl font-extrabold text-white">
-                Tentang Saya 👩‍💻
-              </h2>
-
-              {/* Biodata */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden border-l-4 border-white">
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">
-                    🪪 Biodata
-                  </h3>
-                  <table className="table-auto w-full text-sm text-white/90">
-                    <tbody>
-                      <tr className="border-b border-white/30">
-                        <td className="font-semibold py-2 pr-4">Nama</td>
-                        <td>: Hapsari Retno Puspitaningrum</td>
-                      </tr>
-                      <tr className="border-b border-white/30">
-                        <td className="font-semibold py-2 pr-4">
-                          Tanggal Lahir
-                        </td>
-                        <td>: 11 Maret 2004</td>
-                      </tr>
-                      <tr className="border-b border-white/30">
-                        <td className="font-semibold py-2 pr-4">Email</td>
-                        <td>: hapsari.eno003@gmail.com</td>
-                      </tr>
-                      <tr className="border-b border-white/30">
-                        <td className="font-semibold py-2 pr-4">No HP</td>
-                        <td>: +62-853-2805-1707</td>
-                      </tr>
-                      <tr>
-                        <td className="font-semibold py-2 pr-4">Domisili</td>
-                        <td>: Indonesia</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              {/* Social Media */}
-              <div className="flex gap-6 text-2xl text-white">
-                <a
-                  href="https://github.com/rerettno"
-                  target="_blank"
-                  className="hover:scale-125 transition"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/hapsari-retno-8a7948257/"
-                  target="_blank"
-                  className="hover:scale-125 transition"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="https://www.instagram.com/_eno_113/"
-                  target="_blank"
-                  className="hover:scale-125 transition"
-                >
-                  <FaInstagram />
-                </a>
-              </div>
-
-              {/* CV */}
-              <div>
-                <a
-                  href="/cvRetno.pdf"
-                  download
-                  className="inline-block px-6 py-3 bg-white/10 border border-white text-white font-semibold rounded-full hover:bg-white/20 transition"
-                >
-                  📄 Download CV
-                </a>
-              </div>
+          {/* Grid Info */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+            {/* Personal Details */}
+            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+              <h3 className="text-xl font-semibold mb-6 text-white">
+                📄 Personal Details
+              </h3>
+              <ul className="text-sm space-y-3 text-white/90">
+                <li>
+                  <span className="font-semibold w-32 inline-block">Nama</span>:
+                  Hapsari Retno Puspitaningrum
+                </li>
+                <li>
+                  <span className="font-semibold w-32 inline-block">
+                    Tanggal Lahir
+                  </span>
+                  : 11 Maret 2004
+                </li>
+                <li>
+                  <span className="font-semibold w-32 inline-block">Email</span>
+                  : hapsari.eno003@gmail.com
+                </li>
+                <li>
+                  <span className="font-semibold w-32 inline-block">No HP</span>
+                  : +62-853-2805-1707
+                </li>
+                <li>
+                  <span className="font-semibold w-32 inline-block">
+                    Domisili
+                  </span>
+                  : Semarang, Indonesia
+                </li>
+                <li>
+                  <span className="font-semibold w-32 inline-block">
+                    Status
+                  </span>
+                  :{" "}
+                  <span className="px-2 py-1 rounded bg-teal-500 text-xs font-bold text-black">
+                    FRESH GRADUATE
+                  </span>
+                </li>
+              </ul>
             </div>
 
-            {/* Kanan */}
-            <div className="space-y-10">
-              <p className="text-white/90 text-base leading-relaxed">
-                Saya adalah Front-End Developer yang antusias dengan desain UI
-                modern dan pengembangan web berbasis React & Tailwind CSS. Saya
-                menyukai pengalaman pengguna yang bersih dan cepat ✨.
-              </p>
-
-              {/* Skill */}
-              <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow">
-                <h3 className="text-xl font-semibold text-white mb-6">
-                  ⚙️ Experience
-                </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <SkillBar
-                    title="HTML & CSS"
-                    value={90}
-                    color="text-primary"
-                  />
-                  <SkillBar
-                    title="Tailwind CSS"
-                    value={80}
-                    color="text-blush"
-                  />
-                  <SkillBar
-                    title="React / Next.js"
-                    value={75}
-                    color="text-blue-500"
-                  />
-                  <SkillBar
-                    title="PHP (Native)"
-                    value={50}
-                    color="text-purple-500"
-                  />
-                </div>
+            {/* Interests */}
+            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+              <h3 className="text-xl font-semibold mb-6 text-white">
+                🎯 My Interests
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-center text-sm">
+                {[
+                  { label: "Photography", icon: "🎮" },
+                  { label: "Music", icon: "🎵" },
+                  { label: "Travel", icon: "✈️" },
+                  { label: "UI/UX", icon: "💻" },
+                  { label: "", icon: "🎬" },
+                  { label: "Coffee", icon: "☕" },
+                  { label: "Cook", icon: "🚗" },
+                  { label: "Journaling", icon: "📚" },
+                ].map(({ label, icon }) => (
+                  <div
+                    key={label}
+                    className="flex flex-col items-center gap-2 bg-white/10 p-3 rounded-lg hover:bg-white/20 transition"
+                  >
+                    <div className="text-2xl">{icon}</div>
+                    <div>{label}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Pendidikan */}
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow border-l-4 border-white">
-              <h3 className="text-xl font-semibold text-white mb-3">
-                🎓 Pendidikan
+          {/* CV Download */}
+          <div className="mt-10">
+            <a
+              href="/cvRetno.pdf"
+              download
+              className="px-6 py-2 bg-white/10 border border-white rounded-full hover:bg-white/20 transition"
+            >
+              📄 Download CV
+            </a>
+          </div>
+        </section>
+        {/* ⚙️ SKILL & EXPERIENCE */}
+        <section className="mb-20 text-white px-6 md:px-12 max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-3xl mb-2">⚙️</div>
+            <h2 className="text-4xl font-bold mb-4">Skill & Experience</h2>
+            <p className="text-white/80 max-w-xl mx-auto">
+              Berikut adalah beberapa skill utama saya dalam pengembangan dan
+              komunikasi.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Technical Skills */}
+            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+              <h3 className="text-xl font-semibold text-teal-400 mb-6">
+                💻 Technical Skills
               </h3>
-              <ul className="list-disc list-inside text-sm text-white/90 space-y-1">
-                <li>Universitas Dian Nuswantoro – S1 Teknik Informatika</li>
-              </ul>
+              <div className="space-y-6">
+                <SkillBar title="HTML & CSS" value={90} />
+                <SkillBar title="Tailwind CSS" value={85} />
+                <SkillBar title="React / Next.js" value={75} />
+                <SkillBar title="PHP (Native)" value={50} />
+              </div>
+            </div>
+
+            {/* Professional Skills */}
+            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+              <h3 className="text-xl font-semibold text-teal-400 mb-6">
+                🧠 Professional Skills
+              </h3>
+              <div className="space-y-6">
+                <SkillBar title="Communication" value={85} />
+                <SkillBar title="Teamwork" value={90} />
+                <SkillBar title="Creativity" value={80} />
+                <SkillBar title="Problem Solving" value={70} />
+              </div>
             </div>
           </div>
         </section>
 
         {/* 🎨 PORTFOLIO */}
-        <section className="mb-20">
+        <section className="mb-20 px-6 md:px-12 max-w-7xl mx-auto">
           <h2 className="text-4xl font-extrabold text-white text-center mb-4">
             🎨 Portfolio Project
           </h2>
@@ -182,42 +187,71 @@ const Home = () => {
             dunia desain grafis.
           </p>
 
-          <div className="space-y-8">
-            {[1, 2, 3, 4].map((id) => (
+          <Slider
+            dots={true}
+            infinite={true}
+            speed={500}
+            slidesToShow={1}
+            slidesToScroll={1}
+            arrows={false}
+            autoplay={true}
+            autoplaySpeed={6000}
+          >
+            {[
+              {
+                title: "Website E-Catalog Covaposh",
+                desc: `Desain katalog online yang elegan dan interaktif untuk brand fashion Covaposh. 
+        Tampilan responsif dan navigasi smooth menjadikan katalog mudah diakses di berbagai device.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim optio laborum minus tempore!`,
+                image: mockImage,
+              },
+              {
+                title: "BK Hospital",
+                desc: `Mockup UI sistem booking rumah sakit dengan tampilan modern dan mudah digunakan oleh pasien dan staf. 
+        Proyek ini mengintegrasikan desain bersih dengan elemen interaktif.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio dolore sed!`,
+                image: mockImage,
+              },
+              {
+                title: "PING! (Realtime Chat App)",
+                desc: `Aplikasi diskusi realtime berbasis web untuk kolaborasi tim dan organisasi. 
+        Dirancang dengan UI minimalis, disertai fitur dark mode dan sistem tag diskusi. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, laudantium molestias!`,
+                image: mockImage,
+              },
+              {
+                title: "Peduli Mangrove",
+                desc: `Landing page kampanye pelestarian lingkungan berbasis mangrove. 
+        Menampilkan visual hero kuat dan CTA jelas untuk meningkatkan awareness masyarakat.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptatibus.`,
+                image: mockImage,
+              },
+            ].map((project, i) => (
               <div
-                key={id}
-                className="flex flex-col md:flex-row items-start gap-6 bg-white/10 backdrop-blur-sm p-5 rounded-2xl hover:shadow-lg transition text-white"
+                key={i}
+                className="grid md:grid-cols-2 gap-10 items-center bg-white/5 p-6 md:p-10 rounded-2xl"
               >
-                <div className="w-full md:w-1/3">
-                  <div className="aspect-[4/3] bg-white/10 rounded-xl flex items-center justify-center text-white/70 text-lg font-semibold">
-                    Gambar {id}
-                  </div>
+                {/* Gambar di kiri */}
+                <div className="w-full h-full">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="rounded-xl shadow-xl object-cover w-full h-full"
+                  />
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2">
-                    {
-                      [
-                        "Desain Social Media",
-                        "UI Landing Page",
-                        "Poster Webinar",
-                        "Logo Brand Fashion",
-                      ][id - 1]
-                    }
+
+                {/* Teks di kanan */}
+                <div className="text-white space-y-4 text-left">
+                  <h3 className="text-2xl md:text-3xl font-bold">
+                    {project.title}
                   </h3>
-                  <p className="text-sm text-white/80">
-                    {
-                      [
-                        "Desain branding feeds Instagram untuk UMKM lokal.",
-                        "Mockup UI/UX landing page untuk startup edukasi.",
-                        "Poster promosi untuk webinar nasional.",
-                        "Logo minimalist untuk brand fashion lokal.",
-                      ][id - 1]
-                    }
+                  <p className="text-white/80 leading-relaxed text-justify">
+                    {project.desc}
                   </p>
                 </div>
               </div>
             ))}
-          </div>
+          </Slider>
         </section>
       </div>
 
