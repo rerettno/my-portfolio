@@ -111,7 +111,7 @@ const Home = () => {
               {/* CV */}
               <div>
                 <a
-                  href="/cv.pdf"
+                  href="/retno-cv.pdf"
                   target="_blank"
                   className="inline-block px-6 py-3 bg-white/10 border border-white text-white font-semibold rounded-full hover:bg-white/20 transition"
                 >
