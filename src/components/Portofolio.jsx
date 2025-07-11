@@ -8,10 +8,10 @@ import javascriptLogo from "../assets/logos/javascript.svg";
 import nextjsLogo from "../assets/logos/Nextjs.svg";
 import laravelLogo from "../assets/logos/laravel.svg";
 import phpLogo from "../assets/logos/PHP.svg";
-import bkHospitalProject from "../assets/project/BKHospital.png";
-import pingProject from "../assets/project/Ping!.png";
-import covaposhProject from "../assets/project/Covaposh.png";
-import peduliMangroveProject from "../assets/project/PeduliMangrove.png";
+import bkHospitalProject from "../assets/projects/BKHospital.png";
+import pingProject from "../assets/projects/Ping!.png";
+import covaposhProject from "../assets/projects/Covaposh.png";
+import peduliMangroveProject from "../assets/projects/PeduliMangrove.png";
 
 const portofolioProjects = [
   {
