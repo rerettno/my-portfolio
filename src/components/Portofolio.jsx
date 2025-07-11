@@ -6,7 +6,7 @@ import htmlLogo from "../assets/logos/html.svg";
 import cssLogo from "../assets/logos/css.svg";
 import javascriptLogo from "../assets/logos/javascript.svg";
 import nextjsLogo from "../assets/logos/Nextjs.svg";
-import laravelLogo from "../assets/logos/laravel.svg";
+import laravelLogo from "../assets/logos/Laravel.svg";
 import phpLogo from "../assets/logos/PHP.svg";
 import bkHospitalProject from "../assets/projects/BKHospital.png";
 import pingProject from "../assets/projects/Ping!.png";
