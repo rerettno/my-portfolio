@@ -15,32 +15,36 @@ import peduliMangroveProject from "../assets/projects/PeduliMangrove.png";
 
 const portofolioProjects = [
   {
-    title: "Website E-Catalog Covaposh",
-    desc: `Desain katalog online elegan untuk brand fashion.`,
+    type: "Project Pribadi",
+    title: "E-Catalog Covaposh",
+    desc: `Sebuah katalog berbasis web yang terintegrasi dengan fitur chatbot...`,
     image: covaposhProject,
     tools: [nextjsLogo, tailwindLogo, figmaLogo],
     link: "https://github.com/rerettno/covaposh",
   },
   {
+    type: "Project Kelompok",
     title: "BK Hospital",
-    desc: `Mockup UI sistem booking rumah sakit modern.`,
+    desc: `Aplikasi manajemen layanan rumah sakit...`,
     image: bkHospitalProject,
     tools: [phpLogo, tailwindLogo, javascriptLogo],
     link: "https://github.com/rerettno/website-BKHospital",
   },
   {
-    title: "PING! (Realtime Chat App)",
-    desc: `Aplikasi diskusi realtime berbasis web.`,
+    type: "Project Pribadi",
+    title: "PING!",
+    desc: `Aplikasi pengingat izin atas pelanggaran absensi...`,
     image: pingProject,
     tools: [laravelLogo, cssLogo, figmaLogo],
-    link: "https://www.canva.com/design/DAGsZ71tIWk/mGHublIVju9St7kIJq2Nxw/edit?utm_content=DAGsZ71tIWk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    link: "https://www.canva.com/design/DAGsZ71tIWk/...",
   },
   {
+    type: "Project Kelompok",
     title: "Peduli Mangrove",
-    desc: `Landing page kampanye lingkungan mangrove.`,
+    desc: `Platform donasi online untuk pelestarian mangrove...`,
     image: peduliMangroveProject,
     tools: [htmlLogo, cssLogo, javascriptLogo, figmaLogo],
-    link: "https://www.canva.com/design/DAGsZ9dM_iw/QyC9XceKZ3MlJysE1dBaMA/edit?utm_content=DAGsZ9dM_iw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    link: "https://www.canva.com/design/DAGsZ9dM_iw/...",
   },
 ];
 
@@ -78,6 +82,10 @@ const Portofolio = () => {
 
               {/* Right text block */}
               <div className="w-full md:w-1/2 p-6 md:p-12 text-white flex flex-col justify-center">
+                {/* Type project */}
+                <p className="text-sm uppercase tracking-wider text-white/50 mb-1">
+                  {project.type}
+                </p>
                 <h3 className="text-3xl font-bold mb-4">{project.title}</h3>
                 <p className="text-white/80 text-lg leading-relaxed mb-6">
                   {project.desc}

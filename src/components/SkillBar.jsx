@@ -11,9 +11,7 @@ const SkillBar = ({ title, value }) => {
           className="h-3 bg-teal-400 rounded-full relative transition-all duration-500"
           style={{ width: `${value}%` }}
         >
-          <div className="absolute -top-[6px] -right-2 w-6 h-6 rounded-full bg-teal-400 border-2 border-white text-[10px] font-bold flex items-center justify-center">
-            {value}%
-          </div>
+          <div className="absolute -top-[6px] -right-2 w-6 h-6 rounded-full bg-blush shadow"></div>
         </div>
       </div>
     </div>

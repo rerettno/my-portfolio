@@ -6,10 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Kiri: Info */}
         <div className="text-center md:text-left space-y-1">
-          <h4 className="text-xl font-semibold">Hapsari Retno P.</h4>
-          <p className="text-sm text-white/70">
-            Front-End Developer & Graphic Designer
-          </p>
+          <p className="text-sm text-white/70">Hapsari Retno Puspitaningrum</p>
           <p className="text-sm text-white/50">
             © {new Date().getFullYear()} All rights reserved.
           </p>
