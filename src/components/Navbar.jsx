@@ -8,9 +8,9 @@ const Navbar = () => {
           MyProfile
         </Link>
         <div className="space-x-4">
-          <Link to="/">Home</Link>
-          <>about</>
-          <>Portofolio</>
+          <a href="#header">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
         </div>
       </div>
     </nav>
