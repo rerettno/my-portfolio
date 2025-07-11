@@ -47,7 +47,7 @@ const Home = () => {
           <div className="mb-10">
             <div className="text-3xl mb-2">ℹ️</div>
             <h2 className="text-4xl font-bold mb-4">Who Am I</h2>
-            <p className="text-white/80 max-w-2xl mx-auto">
+            <p className="text-white/80 max-w-4xl mx-auto">
               Lulusan S1 Teknik Informatika dengan ketertarikan pada web
               development, khususnya di bidang front-end. Selama masa studi,
               telah mengerjakan berbagai proyek web menggunakan beragam
