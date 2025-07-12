@@ -15,25 +15,25 @@ import peduliMangroveProject from "../assets/projects/PeduliMangrove.png";
 
 const portofolioProjects = [
   {
-    type: "Project Pribadi",
+    type: "Project Pribadi - Penelitian",
     title: "E-Catalog Covaposh",
-    desc: `Sebuah katalog berbasis web yang terintegrasi dengan fitur chatbot...`,
+    desc: `Sebuah katalog berbasis web yang terintegrasi dengan fitur chatbot untuk mempermudah layanan penjualan jasa buket secara online.`,
     image: covaposhProject,
     tools: [nextjsLogo, tailwindLogo, figmaLogo],
     link: "https://github.com/rerettno/covaposh",
   },
   {
-    type: "Project Kelompok",
+    type: "Project Pribadi - Tugas",
     title: "BK Hospital",
-    desc: `Aplikasi manajemen layanan rumah sakit...`,
+    desc: `Aplikasi manajemen layanan rumah sakit yang dirancang untuk membantu pengelolaan data pasien, jadwal dokter, dan proses administrasi medis.`,
     image: bkHospitalProject,
     tools: [phpLogo, tailwindLogo, javascriptLogo],
     link: "https://github.com/rerettno/website-BKHospital",
   },
   {
-    type: "Project Pribadi",
+    type: "Project Kelompok",
     title: "PING!",
-    desc: `Aplikasi pengingat izin atas pelanggaran absensi...`,
+    desc: `Aplikasi pengingat izin atas pelanggaran absensi kehadiran yang memungkinkan pengguna untuk melacak dan merekap data ketidakhadiran secara efisien.`,
     image: pingProject,
     tools: [laravelLogo, cssLogo, figmaLogo],
     link: "https://www.canva.com/design/DAGsZ71tIWk/...",
@@ -41,7 +41,7 @@ const portofolioProjects = [
   {
     type: "Project Kelompok",
     title: "Peduli Mangrove",
-    desc: `Platform donasi online untuk pelestarian mangrove...`,
+    desc: `Platform donasi online yang bertujuan meningkatkan partisipasi masyarakat dalam pelestarian mangrove, dengan sistem transparan dan efisien dalam penggunaan dana.`,
     image: peduliMangroveProject,
     tools: [htmlLogo, cssLogo, javascriptLogo, figmaLogo],
     link: "https://www.canva.com/design/DAGsZ9dM_iw/...",
@@ -83,11 +83,11 @@ const Portofolio = () => {
               {/* Right text block */}
               <div className="w-full md:w-1/2 p-6 md:p-12 text-white flex flex-col justify-center">
                 {/* Type project */}
-                <p className="text-sm uppercase tracking-wider text-white/50 mb-1">
+                <p className="text-sm  tracking-wider text-white mb-1">
                   {project.type}
                 </p>
                 <h3 className="text-3xl font-bold mb-4">{project.title}</h3>
-                <p className="text-white/80 text-lg leading-relaxed mb-6">
+                <p className="text-white/80 text-md leading-relaxed mb-6">
                   {project.desc}
                 </p>
                 <div className="flex gap-4 items-center mb-6">
@@ -96,7 +96,7 @@ const Portofolio = () => {
                       key={idx}
                       src={logo}
                       alt="tool logo"
-                      className="w-8 h-8 object-contain hover:scale-110 transition"
+                      className="w-10 h-10 object-contain hover:scale-110 transition"
                     />
                   ))}
                 </div>
