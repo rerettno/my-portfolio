@@ -21,6 +21,8 @@ const portofolioProjects = [
     image: covaposhProject,
     tools: [nextjsLogo, tailwindLogo, figmaLogo],
     link: "https://github.com/rerettno/covaposh",
+    jurnal:
+      "https://e-journal.hamzanwadi.ac.id/index.php/edumatic/article/view/29435",
   },
   {
     type: "Project Pribadi - Tugas",
@@ -101,14 +103,27 @@ const Portofolio = () => {
                   ))}
                 </div>
 
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="self-start inline-block px-6 py-2 border border-white rounded-full hover:bg-white/20 transition"
-                >
-                  View Project →
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-2 border border-white rounded-full hover:bg-white/20 transition"
+                  >
+                    View Project →
+                  </a>
+
+                  {project.jurnal && (
+                    <a
+                      href={project.jurnal}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-6 py-2 border border-white rounded-full hover:bg-white/20 transition"
+                    >
+                      View Jurnal 📄
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
