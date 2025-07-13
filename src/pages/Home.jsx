@@ -3,6 +3,7 @@ import foto from "../assets/rere.png";
 import SkillBar from "../components/SkillBar";
 import Footer from "../components/Footer";
 import Portofolio from "../components/Portofolio";
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary via-soft to-blush text-white">
@@ -10,8 +11,14 @@ const Home = () => {
 
       <div id="header" className="pt-24 px-6 md:px-12 max-w-6xl mx-auto">
         {/* 🧠 HEADER */}
-        <section className="flex flex-col md:flex-row justify-between items-center gap-10 mb-20">
-          <div className="text-center md:text-left flex-1">
+        <section
+          className="flex flex-col md:flex-row justify-between items-center gap-10 mb-20"
+          data-aos="fade-up"
+        >
+          <div
+            className="text-center md:text-left flex-1"
+            data-aos="fade-right"
+          >
             <h1 className="text-5xl font-extrabold mb-2">Retno's Profile</h1>
             <h2 className="text-xl text-white/70 mb-6">
               Fresh Graduate | Front-End Developer
@@ -26,24 +33,24 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="relative w-[280px] h-[380px] md:w-[420px] md:h-[580px] bg-gradient-to-tl  from-soft to-blush rounded-t-full rounded-bl-full overflow-hidden shadow-2xl">
+          <div
+            className="relative w-[280px] h-[380px] md:w-[420px] md:h-[580px] bg-gradient-to-tl  from-soft to-blush rounded-t-full rounded-bl-full overflow-hidden shadow-2xl"
+            data-aos="fade-left"
+          >
             <img
               src={foto}
               alt="Foto Profil"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full text-base font-semibold">
-              Hapsari Retno Puspitaningrum
-            </div> */}
           </div>
         </section>
 
-        {/* 🧍 TENTANG SAYA  */}
+        {/* 🧍 TENTANG SAYA */}
         <section
           id="about"
           className="mb-20 text-white px-6 md:px-12 max-w-6xl mx-auto text-center"
+          data-aos="fade-up"
         >
-          {/* Header */}
           <div className="mb-10">
             <div className="text-3xl mb-2">ℹ️</div>
             <h2 className="text-4xl font-bold mb-4">Who Am I</h2>
@@ -60,10 +67,12 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Grid Info */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
             {/* Personal Details */}
-            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+            <div
+              className="bg-white/5 p-6 rounded-xl shadow border border-white/10"
+              data-aos="fade-right"
+            >
               <h3 className="text-xl font-semibold mb-6 text-white">
                 📄 Personal Details
               </h3>
@@ -105,11 +114,13 @@ const Home = () => {
             </div>
 
             {/* Interests */}
-            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+            <div
+              className="bg-white/5 p-6 rounded-xl shadow border border-white/10"
+              data-aos="fade-left"
+            >
               <h3 className="text-xl font-semibold mb-6 text-white">
                 🎯 My Interests
               </h3>
-
               <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 text-center text-sm">
                 {[
                   { label: "Photography", icon: "📷" },
@@ -118,12 +129,13 @@ const Home = () => {
                   { label: "UI/UX", icon: "💻" },
                   { label: "Crafting", icon: "🧶" },
                   { label: "Flowers", icon: "🌸" },
-                  { label: "Make Up", icon: "💄" }, // ✔️ Ikon kosmetik
+                  { label: "Make Up", icon: "💄" },
                   { label: "Journaling", icon: "📔" },
                 ].map(({ label, icon }) => (
                   <div
                     key={label}
                     className="flex flex-col items-center gap-2 bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-all duration-300 ease-in-out shadow-sm"
+                    data-aos="zoom-in"
                   >
                     <div className="text-2xl">{icon}</div>
                     <div className="text-white">{label}</div>
@@ -134,7 +146,7 @@ const Home = () => {
           </div>
 
           {/* CV Download */}
-          <div className="mt-10">
+          <div className="mt-10" data-aos="zoom-in">
             <a
               href="/cvRetno.pdf"
               download
@@ -146,7 +158,10 @@ const Home = () => {
         </section>
 
         {/* ⚙️ SKILL & EXPERIENCE */}
-        <section className="mb-20 text-white px-6 md:px-12 max-w-6xl mx-auto">
+        <section
+          className="mb-20 text-white px-6 md:px-12 max-w-6xl mx-auto"
+          data-aos="fade-up"
+        >
           <div className="text-center mb-12">
             <div className="text-3xl mb-2">⚙️</div>
             <h2 className="text-4xl font-bold mb-4">Skill & Experience</h2>
@@ -157,8 +172,10 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Technical Skills */}
-            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+            <div
+              className="bg-white/5 p-6 rounded-xl shadow border border-white/10"
+              data-aos="fade-right"
+            >
               <h3 className="text-xl font-semibold text-teal-400 mb-6">
                 💻 Technical Skills
               </h3>
@@ -170,8 +187,10 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Professional Skills */}
-            <div className="bg-white/5 p-6 rounded-xl shadow border border-white/10">
+            <div
+              className="bg-white/5 p-6 rounded-xl shadow border border-white/10"
+              data-aos="fade-left"
+            >
               <h3 className="text-xl font-semibold text-teal-400 mb-6">
                 🧠 Professional Skills
               </h3>
@@ -185,8 +204,12 @@ const Home = () => {
           </div>
         </section>
       </div>
+
       {/* 🎨 PORTFOLIO */}
-      <Portofolio />
+      <div data-aos="fade-up">
+        <Portofolio />
+      </div>
+
       <Footer />
     </div>
   );

@@ -13,6 +13,9 @@
 }
 
 /* Hapus styling Vite yang nutupi Tailwind */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   @apply bg-white text-gray-900;
