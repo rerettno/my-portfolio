@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 //import Navbar from "./components/navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
