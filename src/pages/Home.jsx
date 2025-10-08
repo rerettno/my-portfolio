@@ -158,7 +158,7 @@ const Home = () => {
           </div>
 <div className="mt-10" data-aos="zoom-in">
             <a
-              href="/SerifikasiRetno.pdf"
+              href="https://drive.google.com/file/d/1HBfLChVtPLGzQ0rUWyIQkmtdT_EMAyOO/view?usp=drivesdk"
               download
               className="px-6 py-2 bg-white/10 border border-white rounded-full hover:bg-white/20 transition"
             >
