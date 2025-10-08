@@ -145,7 +145,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* CV Download */}
+          {/* Download */}
           <div className="mt-10" data-aos="zoom-in">
             <a
               href="/cvRetno.pdf"
@@ -153,6 +153,16 @@ const Home = () => {
               className="px-6 py-2 bg-white/10 border border-white rounded-full hover:bg-white/20 transition"
             >
               📄 Download CV
+            </a>
+
+          </div>
+<div className="mt-10" data-aos="zoom-in">
+            <a
+              href="/SerifikasiRetno.pdf"
+              download
+              className="px-6 py-2 bg-white/10 border border-white rounded-full hover:bg-white/20 transition"
+            >
+              📄 Download Sertifikat
             </a>
           </div>
         </section>
