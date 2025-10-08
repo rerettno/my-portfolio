@@ -183,7 +183,7 @@ const Home = () => {
                 <SkillBar title="HTML & CSS" value={85} />
                 <SkillBar title="Tailwind CSS" value={85} />
                 <SkillBar title="React / Next.js" value={70} />
-                <SkillBar title="PHP (Native)" value={40} />
+                <SkillBar title="PHP (Native / laravel )" value={50} />
               </div>
             </div>
 
