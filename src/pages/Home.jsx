@@ -26,7 +26,7 @@ const Home = () => {
             <p className="leading-relaxed max-w-xl text-white/80 mb-6 mx-auto md:mx-0">
               Hai! Aku Retno, fresh graduate dari S1 Teknik Informatika
               Universitas Dian Nuswantoro. Sekarang aku fokus ngembangin skill
-              sebagai front-end developer di bidang web development.
+              sebagai developer di bidang web development.
             </p>
             <button className="px-6 py-2 rounded-full bg-white/10 border border-white font-medium hover:bg-white/20 transition">
               Read more →
@@ -126,7 +126,7 @@ const Home = () => {
                   { label: "Photography", icon: "📷" },
                   { label: "Music", icon: "🎵" },
                   { label: "Travel", icon: "✈️" },
-                  { label: "UI/UX", icon: "💻" },
+                  { label: "Coding Web", icon: "💻" },
                   { label: "Crafting", icon: "🧶" },
                   { label: "Flowers", icon: "🌸" },
                   { label: "Make Up", icon: "💄" },
