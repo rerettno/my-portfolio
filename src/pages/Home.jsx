@@ -162,7 +162,7 @@ const Home = () => {
               download
               className="px-6 py-2 bg-white/10 border border-white rounded-full hover:bg-white/20 transition"
             >
-              📄 Download Sertifikat
+              🗂 Download Sertifikat
             </a>
           </div>
         </section>
