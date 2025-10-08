@@ -38,7 +38,7 @@ const portofolioProjects = [
     desc: `Aplikasi pengingat izin atas pelanggaran absensi kehadiran yang memungkinkan pengguna untuk melacak dan merekap data ketidakhadiran secara efisien.`,
     image: pingProject,
     tools: [laravelLogo, cssLogo, figmaLogo],
-    link: "https://www.canva.com/design/DAGsZ71tIWk/...",
+    link: "https://drive.google.com/file/d/1D0hTaEp-z6J_vjas1Qg4CwjyZshzAM2r/view?usp=drivesdk", 
   },
   {
     type: "Project Kelompok",
@@ -46,7 +46,7 @@ const portofolioProjects = [
     desc: `Platform donasi online yang bertujuan meningkatkan partisipasi masyarakat dalam pelestarian mangrove, dengan sistem transparan dan efisien dalam penggunaan dana.`,
     image: peduliMangroveProject,
     tools: [htmlLogo, cssLogo, javascriptLogo, figmaLogo],
-    link: "https://www.canva.com/design/DAGsZ9dM_iw/...",
+    link: "https://drive.google.com/file/d/1vduU8bJl9TOIvUnndhScJ_aJ8ka5MvGx/view?usp=drivesdk",
   },
 ];
 
